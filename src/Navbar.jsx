@@ -1,6 +1,13 @@
+const Navbar = () => {
+  return (
+    <header>
+      <ul>
+        <li>inicio</li>
+        <li>menu</li>
+        <li>contacto</li>
+      </ul>
+    </header>
+  );
+};
 
-const Navbar = ()=>{
-    return 
-}
-
-export default Navbar
+export default Navbar;
