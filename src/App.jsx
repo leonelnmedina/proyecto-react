@@ -1,7 +1,15 @@
+import Navbar from "./components/layaut/navbar/Navbar";
+import HomeContainer from "./components/pages/home/HomeContainer";
+import ItemListContainer from "./components/pages/itemList/ItemListContainer";
 function App() {
+  let nombre = "Suly";
+
+  const saludo = "Hola que tal??";
   return (
     <div>
-      <h1>Este es el app</h1>
+      <Navbar />
+      <HomeContainer nombre={nombre} />
+      <ItemListContainer saludo={saludo} />
     </div>
   );
 }
