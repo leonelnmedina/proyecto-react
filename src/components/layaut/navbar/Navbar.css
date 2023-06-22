@@ -6,6 +6,11 @@
   justify-content: space-around;
   align-items: center;
   color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .conteinerCategories {
   display: flex;
