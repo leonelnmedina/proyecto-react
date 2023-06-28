@@ -1,15 +1,13 @@
-import Navbar from "./components/layaut/navbar/Navbar";
-import HomeContainer from "./components/pages/home/HomeContainer";
-import ItemListContainer from "./components/pages/itemList/ItemListContainer";
+import MaterialsComponents from "./components/pages/material/MaterialsComponents";
+import Material from "./components/pages/material/material";
 function App() {
   let nombre = "Suly";
 
   const saludo = "Hola que tal??";
   return (
     <div>
-      <Navbar />
-      <HomeContainer nombre={nombre} />
-      <ItemListContainer saludo={saludo} />
+      {/* <Material /> */}
+      <MaterialsComponents />
     </div>
   );
 }
