@@ -1,8 +1,11 @@
-const ItemList = ({ apellido, saludo }) => {
+const ItemList = ({ edad, setEdad, products, setProducts }) => {
   return (
     <div>
-      <h3>{apellido}</h3>
-      <h2>{saludo}</h2>
+      <h2>{edad}</h2>
+      <button onClick={() => setEdad(edad + 1)}>Incrementar edad</button>
+      <button onClick={() => setProducts([...products, {}])}>
+        Agregar producto
+      </button>
     </div>
   );
 };
