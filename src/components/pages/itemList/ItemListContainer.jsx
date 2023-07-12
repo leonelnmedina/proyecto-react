@@ -1,9 +1,12 @@
 import ItemList from "./ItemList";
 
-const ItemListContainer = ({ saludo }) => {
-  let apellido = "Medina";
+const tarea = new Promise((resolve, reject) => {
+  resolve();
+  reject();
+});
 
-  return <ItemList apellido={apellido} saludo={saludo} />;
+const ItemListContainer = () => {
+  return <ItemList />;
 };
 
 export default ItemListContainer;
