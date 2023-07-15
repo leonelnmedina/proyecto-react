@@ -1,16 +1,22 @@
+import { useState, useEffect } from "react";
+import { products } from "../../../productsMock";
 import ItemList from "./ItemList";
 
-const tarea = new Promise((resolve, reject) => {
-  resolve("Salio todo bien");
-  // reject("Salio todo mal");
-});
-
-tarea
-  .then((respuesta) => console.log(respuesta))
-  .catch((error) => console.log(error));
-
 const ItemListContainer = () => {
-  return <ItemList />;
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const tarea = new Promise((resolve, reject) => {
+      resolve(products);
+      // reject("Salio todo mal");
+    });
+
+    tarea
+      .then((respuesta) => setItems(respuesta))
+      .catch((error) => console.log(error));
+  }, []);
+
+  return <ItemList items={items} />;
 };
 
 export default ItemListContainer;
