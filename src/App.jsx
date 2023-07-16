@@ -1,3 +1,4 @@
+import ProbandoJsonServer from "./ProbandoJsonServer";
 import Navbar from "./components/layaut/navbar/Navbar";
 import FetchData from "./components/pages/fetchData/FetchData";
 import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
@@ -7,9 +8,10 @@ function App() {
   return (
     <div>
       <Navbar />
-      <ItemListContainer />
+      <ProbandoJsonServer />
+      {/* <ItemListContainer /> */}
       {/* <FetchData /> */}
-      <ItemDetailContainer />
+      {/* <ItemDetailContainer /> */}
     </div>
   );
 }
