@@ -7,7 +7,17 @@ const Navbar = () => {
   return (
     <div>
       <div className="navContainer">
-        <Link to="/">SulyApp</Link>
+        <div>
+          {/* <img
+            className="Logo1"
+            src="https://www.pngwing.com/es/free-png-bybbk"
+            alt=""
+          /> */}
+          <Link className="logo" to="/">
+            SulyApp
+          </Link>
+        </div>
+
         <ul className="conteinerCategories">
           <Link to="/">Todos</Link>
           <Link to="/category/apple">Gama alta</Link>
