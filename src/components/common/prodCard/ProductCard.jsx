@@ -10,8 +10,8 @@ import {
 import "./ProductCard.css";
 const ProductCard = ({ item }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia sx={{ height: 140 }} image={item.img} title="green iguana" />
+    <Card sx={{ maxWidth: 215 }}>
+      <CardMedia sx={{ height: 200 }} image={item.img} title="green iguana" />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {item.title}
