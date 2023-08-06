@@ -8,7 +8,7 @@ const ItemDetail = ({ product, agregarAlCarrito }) => {
 
       <CounterContainer
         stock={product.stock}
-        agregaraAlCarrito={agregarAlCarrito}
+        agregarAlCarrito={agregarAlCarrito}
       />
     </div>
   );
