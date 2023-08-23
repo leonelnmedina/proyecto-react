@@ -34,6 +34,17 @@ const CartContextComponent = ({ children }) => {
     setCart(newArr);
   };
 
+  //Retorne el total de cantidades
+
+  const getTotalQuantity = () => {
+    let total = cart.reduce((acc, elemento) => {
+      return acc + elemento.quantity;
+    }, 0);
+    return total;
+  };
+
+  //Retorne el total de precios
+
   let data = { cart, addToCart, clearCart, deleteById };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
