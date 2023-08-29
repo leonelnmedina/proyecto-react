@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { products } from "../../../productsMock";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
+import MoonLoader from "react-spinners/MoonLoader";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
@@ -14,7 +15,9 @@ const ItemListContainer = () => {
     );
 
     const tarea = new Promise((resolve, reject) => {
-      resolve(categoryName ? productosFiltrados : products);
+      setTimeout(() => {
+        resolve(categoryName ? productosFiltrados : products);
+      }, 4000);
       // reject("Salio todo mal");
     });
 
@@ -23,7 +26,15 @@ const ItemListContainer = () => {
       .catch((error) => console.log(error));
   }, [categoryName]);
 
-  return <ItemList items={items} />;
+  return (
+    <>
+      <ItemList items={items} />;
+    </>
+  );
+
+  // if (items.length === 0) {
+  //   return <MoonLoader color="#36d7b7" />;
+  // }
 };
 
 export default ItemListContainer;
