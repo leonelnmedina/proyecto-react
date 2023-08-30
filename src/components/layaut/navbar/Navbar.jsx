@@ -7,11 +7,6 @@ const Navbar = () => {
     <div>
       <div className="navContainer">
         <div>
-          {/* <img
-            className="Logo1"
-            src="https://www.pngwing.com/es/free-png-bybbk"
-            alt=""
-          /> */}
           <Link className="logo" to="/">
             SulyApp
           </Link>
@@ -19,9 +14,8 @@ const Navbar = () => {
 
         <ul className="conteinerCategories">
           <Link to="/">Todos</Link>
-          <Link to="/category/apple">Gama alta</Link>
-          <Link to="/category/samsung">Gama baja</Link>
-          <li>Marcas sponsor</li>
+          <Link to="/category/apple">Apple</Link>
+          <Link to="/category/samsung">Samsung</Link>
         </ul>
         <CartWidget />
       </div>

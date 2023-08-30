@@ -5,7 +5,7 @@ export const products = [
     img: "https://http2.mlstatic.com/D_NQ_NP_945736-MLA46114829756_052021-O.webp",
     price: 999,
     category: "apple",
-    stock: 1,
+    stock: 3,
     description: "Potente y elegante, cámara de alta calidad.",
   },
   {
@@ -24,7 +24,7 @@ export const products = [
     img: "https://http2.mlstatic.com/D_NQ_NP_739482-MLA51807489316_102022-O.webp",
     price: 1199,
     category: "apple",
-    stock: 2,
+    stock: 5,
     description: "Reconocimiento facial avanzado, rendimiento excepcional.",
   },
   {
