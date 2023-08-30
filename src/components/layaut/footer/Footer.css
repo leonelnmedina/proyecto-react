@@ -1,0 +1,12 @@
+.contenedorFooter {
+  width: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+h3 {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+}
