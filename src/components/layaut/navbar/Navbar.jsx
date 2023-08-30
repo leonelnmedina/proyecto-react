@@ -17,6 +17,9 @@ const Navbar = () => {
           <Link to="/category/apple">Apple</Link>
           <Link to="/category/samsung">Samsung</Link>
         </ul>
+
+        <Link to="/dashboard">Administrador</Link>
+
         <CartWidget />
       </div>
     </div>

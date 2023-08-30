@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { CartContext } from "../../../context/CartContext";
 import Swal from "sweetalert2";
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const CartContainer = () => {
   const { cart, clearCart, deleteById, getTotalPrice } =
@@ -39,16 +41,23 @@ const CartContainer = () => {
             <h3>{elemento.title}</h3>
             <h3>{elemento.price}</h3>
             <h4>Cantidad: {elemento.quantity}</h4>
-            <button onClick={() => deleteById(elemento.id)}>Eliminar</button>
+            <Button variant="contained" onClick={() => deleteById(elemento.id)}>
+              Eliminar
+            </Button>
           </div>
         );
       })}
 
       {cart.length > 0 && (
         <>
-          <button onClick={limpiar}>Limpiar carrito</button>
+          <Button variant="outlined" onClick={limpiar}>
+            Limpiar carrito
+          </Button>
+
           <h2>El total del carrito es: {total}</h2>
-          <button>Terminar compra</button>
+          <Link to="/checkout">
+            <Button variant="outlined">Terminar compra</Button>
+          </Link>
         </>
       )}
     </div>
